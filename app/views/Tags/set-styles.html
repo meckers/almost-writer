@@ -1,0 +1,11 @@
+#{set 'files'}
+    #{ include '/build/styles.files' /}
+#{/set}
+
+#{set fileArray: files.split('\n') /}
+
+#{list items:fileArray, as: 'file'}
+    #{if file.replace(' ', '') != ""}
+        %{ _areaStyles.add(file.replace(' ', '')) }%
+    #{/if}
+#{/list}

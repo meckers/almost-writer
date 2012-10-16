@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+#{ set baseScriptsDir:'/public/javascripts' /}
+#{ set baseStylesDir:'/public/stylesheets' /}
+#{ set areaScripts: [] /}
+#{ set areaStyles: [] /}
+
+#{ set-scripts area:area, areaScripts:areaScripts /}
+#{ set-styles area:area, areaStyles:areaStyles /}
+
+
+
+<input type="button" id="playback" value="display" />
+<input type="button" id="save" value="save" />
+<input type="button" id="dump" value="dump" />
+<input type="button" id="undump" value="undump" />
+<div id="char-matrix"></div>
+
+
+<div id="cav"></div>
+
+
+
+<script language="javascript">
+    #{if (strokes != null) }
+        var _strokes = ${strokes.raw()};
+    #{/if}
+</script>
+
+<!--canvas id="writer-canvas" width="400" height="400"></canvas-->
