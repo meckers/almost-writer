@@ -33,6 +33,7 @@ DomMatrix = Class.extend({
         this.empty();
         this.createCells();
         this.cursor = new DomCursor(this.cellSize.width, this.cellSize.height);
+        this.setColor('white');
         this.setCell(this.getCell(0,0));
     },
 
@@ -101,7 +102,7 @@ DomMatrix = Class.extend({
         cell.setColor(this.currentColor);
         cell.write(chr);
 
-        if (chr === '=') {
+        if (chr === '=' || chr == '-') {
             cell.animate();
         }
     },

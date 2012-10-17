@@ -32,7 +32,7 @@ Animation = Class.extend({
                 window.clearInterval(me.interval);
                 me.doAnimation();
             }
-        }, 25)
+        }, 10)
     },
 
     update: function() {

@@ -75,7 +75,7 @@ DomCell = Class.extend({
     },
 
     write: function(chr) {
-
+        this.deAnimate();
         var charWidth = this.spriteManager.charSize.width;
         var charHeight = this.spriteManager.charSize.height;
         var spritePos = SpriteMap[chr];
@@ -98,41 +98,23 @@ DomCell = Class.extend({
     },
 
     animate: function() {
-        //this.charContainer.attr('name', 'original');
-        /*this.charContainer.css({
-            'float': 'left'
-        });*/
         this.secondCharElement = this.charContainer.clone();
         this.charContainer.addClass("original");
         this.secondCharElement.addClass("copy");
-        //secondCharElement.attr('name', 'copy');
         this.relativizer.append(this.secondCharElement);
         this.relativizer.addClass("animated");
-
         Events.trigger("ANIMATED_CHARACTER_ENTERED");
-
-        //this.animated = true;
-
-        //this.doAnimation();
     },
 
-    doAnimation: function() {
-        var me = this;
-        window.clearInterval(this.interval);
-
-        this.charContainer.css('left', 0);
-        this.secondCharElement.css('left', 16);
-
-        this.interval = window.setInterval(function() {
-            var newLeftOrig = parseInt(me.charContainer.css('left').replace('px','')) - 2;
-            var newLeftCopy = parseInt(me.secondCharElement.css('left').replace('px','')) - 2;
-            me.charContainer.css('left', newLeftOrig);
-            me.secondCharElement.css('left', newLeftCopy);
-            if (newLeftOrig === -16) {
-                me.doAnimation();
-            }
-        }, 10);
+    deAnimate: function() {
+        if (this.relativizer.hasClass("animated")) {
+            console.log("de-animating");
+            this.relativizer.find(".original").css('left', 0).removeClass("original");
+            this.relativizer.find(".copy").remove();
+            this.relativizer.removeClass("animated");
+        }
     }
+
 
 
 });
