@@ -9,6 +9,7 @@ Writer = Class.extend({
         this.drawingAgent = new DomAgent("#char-matrix");
         this.strokeHandler = new StrokeHandler();
         this.recorder = new Recorder();
+        this.animation = new Animation();
 
         if (typeof(_strokes) !== 'undefined') {
             this.playbackSaved();

@@ -16,8 +16,28 @@
 .char-sprite {
     background-color: black;
     position: absolute;
+    overflow: hidden;
 }
 
+.char-container {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+
+.char-container.original {
+    left: 0px;
+    top: 0px;
+}
+
+.char-container.copy {
+    left: 16px;
+    top: 0px;
+}
+
+.relativizer {
+    overflow: hidden;
+}
 
 .imgchar-double-size {
     width: 16px;

@@ -10,6 +10,7 @@ drawing/dom-agent.js
 drawing/dom-matrix.js
 drawing/dom-cell.js
 drawing/dom-cursor.js
+drawing/animation.js
 stroke-rules/stroke-rule.js
 stroke-rules/alphanumeric-rule.js
 stroke-rules/shifted-rule.js

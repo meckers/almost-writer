@@ -7,6 +7,9 @@ DomCell = Class.extend({
     spriteManager: null,
     chr: '',
     color: 'white',
+    charContainer: null,
+    secondCharElement: null,
+    animated: false,
 
     init: function(width, height, row, col) {
         this.spriteManager = new SpriteManager();
@@ -20,12 +23,15 @@ DomCell = Class.extend({
             'left' : col * height + 'px',
             'top' : row * width + 'px'
         });
-        this.charContainer = $("<div></div>");
-        this.charContainer.css({
-            'width' : width,
-            'height' : height
+        this.relativizer = $("<div></div>");
+        this.relativizer.attr('name', 'relativizer');
+        this.relativizer.css({
+            'position': 'relative'
         });
-        this.element.append(this.charContainer);
+        this.charContainer = $("<div></div>");
+        this.charContainer.addClass("char-container");
+        this.relativizer.append(this.charContainer);
+        this.element.append(this.relativizer);
         //this.setCharElement();
         //this.element.append(this.charElement);
         this.setFont();
@@ -48,11 +54,11 @@ DomCell = Class.extend({
 
         this.color = color;
 
-        $(this.element).removeClass (function (index, css) {
+        $(this.charContainer).removeClass (function (index, css) {
             return (css.match (/\bcolor-\S+/g) || []).join(' ');
         });
 
-        $(this.element).addClass("color-" + color);
+        $(this.charContainer).addClass("color-" + color);
 
         /*
         this.element.css({
@@ -61,7 +67,7 @@ DomCell = Class.extend({
     },
 
     setFont: function(font) {
-        this.element.addClass("cav-of-sillahc");
+        this.charContainer.addClass("cav-of-sillahc");
     },
 
     setToSpace: function() {
@@ -76,8 +82,8 @@ DomCell = Class.extend({
         this.chr = chr;
         this.setColor(this.color);
 
-        this.element.css({
-            'background-position': '-' + (charWidth * spritePos[1]) + 'px ' + '-' + (charWidth * spritePos[0]) + 'px'
+        this.charContainer.css({
+            'background-position': '-' + (charWidth * spritePos[1]) + 'px ' + '-' + (charHeight * spritePos[0]) + 'px'
         });
         //this.charElement.html(chr);
     },
@@ -89,6 +95,43 @@ DomCell = Class.extend({
 
     copy: function(fromCell) {
         this.write(fromCell.getChar());
+    },
+
+    animate: function() {
+        //this.charContainer.attr('name', 'original');
+        /*this.charContainer.css({
+            'float': 'left'
+        });*/
+        this.secondCharElement = this.charContainer.clone();
+        this.charContainer.addClass("original");
+        this.secondCharElement.addClass("copy");
+        //secondCharElement.attr('name', 'copy');
+        this.relativizer.append(this.secondCharElement);
+        this.relativizer.addClass("animated");
+
+        Events.trigger("ANIMATED_CHARACTER_ENTERED");
+
+        //this.animated = true;
+
+        //this.doAnimation();
+    },
+
+    doAnimation: function() {
+        var me = this;
+        window.clearInterval(this.interval);
+
+        this.charContainer.css('left', 0);
+        this.secondCharElement.css('left', 16);
+
+        this.interval = window.setInterval(function() {
+            var newLeftOrig = parseInt(me.charContainer.css('left').replace('px','')) - 2;
+            var newLeftCopy = parseInt(me.secondCharElement.css('left').replace('px','')) - 2;
+            me.charContainer.css('left', newLeftOrig);
+            me.secondCharElement.css('left', newLeftCopy);
+            if (newLeftOrig === -16) {
+                me.doAnimation();
+            }
+        }, 10);
     }
 
 

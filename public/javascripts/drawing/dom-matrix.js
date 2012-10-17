@@ -100,6 +100,10 @@ DomMatrix = Class.extend({
         //$(cell.element).html(chr);
         cell.setColor(this.currentColor);
         cell.write(chr);
+
+        if (chr === '=') {
+            cell.animate();
+        }
     },
 
     goToNextCell: function() {
