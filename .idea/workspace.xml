@@ -15,14 +15,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b12844cb-dea2-4a63-96dd-53d89c82b127" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/formula_one.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/drawing/dom-agent-new.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/drawing/dom-cell-new.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/drawing/matrix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/dom-styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/system.out" afterPath="$PROJECT_DIR$/logs/system.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/index.html" afterPath="$PROJECT_DIR$/app/views/Application/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/build/scripts.files" afterPath="$PROJECT_DIR$/app/views/build/scripts.files" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/build/styles.files" afterPath="$PROJECT_DIR$/app/views/build/styles.files" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/drawing/animation.js" afterPath="$PROJECT_DIR$/public/javascripts/drawing/animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/drawing/dom-agent.js" afterPath="$PROJECT_DIR$/public/javascripts/drawing/dom-agent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/drawing/dom-cell.js" afterPath="$PROJECT_DIR$/public/javascripts/drawing/dom-cell.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/drawing/dom-matrix.js" afterPath="$PROJECT_DIR$/public/javascripts/drawing/dom-matrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/drawing/drawing-agent.js" afterPath="$PROJECT_DIR$/public/javascripts/drawing/drawing-agent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/events.js" afterPath="$PROJECT_DIR$/public/javascripts/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/keymapper.js" afterPath="$PROJECT_DIR$/public/javascripts/keymapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/position.js" afterPath="$PROJECT_DIR$/public/javascripts/position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/recorder.js" afterPath="$PROJECT_DIR$/public/javascripts/recorder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/sprite-manager.js" afterPath="$PROJECT_DIR$/public/javascripts/sprite-manager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/stroke-handler.js" afterPath="$PROJECT_DIR$/public/javascripts/stroke-handler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/stroke-rules/alphanumeric-rule.js" afterPath="$PROJECT_DIR$/public/javascripts/stroke-rules/alphanumeric-rule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/stroke-rules/ctrld-rule.js" afterPath="$PROJECT_DIR$/public/javascripts/stroke-rules/ctrld-rule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/stroke-rules/special-key-rule.js" afterPath="$PROJECT_DIR$/public/javascripts/stroke-rules/special-key-rule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/stroke-rules/unmodified-rule.js" afterPath="$PROJECT_DIR$/public/javascripts/stroke-rules/unmodified-rule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/writer.js" afterPath="$PROJECT_DIR$/public/javascripts/writer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.pid" afterPath="$PROJECT_DIR$/server.pid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_build_scripts.files" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_build_scripts.files" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_build_styles.files" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_build_styles.files" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" />
     </list>
     <ignored path="almost-writer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,84 +101,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dom-cell.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-cell.js">
+      <file leaf-file-name="dom-cell-new.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-cell-new.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="34" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.0">
+            <state line="34" column="52" selection-start="815" selection-end="815" vertical-scroll-proportion="0.25768822">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dom-matrix.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-matrix.js">
+      <file leaf-file-name="dom-styles.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/dom-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="20" selection-start="2485" selection-end="2489" vertical-scroll-proportion="0.0">
+            <state line="8" column="40" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="animation.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/animation.js">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="13" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+            <state line="7" column="13" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="9" selection-start="734" selection-end="734" vertical-scroll-proportion="-22.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recorder.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/recorder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="17" selection-start="368" selection-end="381" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="writer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/writer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="30" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dom-agent.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dom-agent.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-agent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="23" selection-start="1396" selection-end="1396" vertical-scroll-proportion="1.5756098">
+            <state line="34" column="23" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawing-agent.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/drawing-agent.js">
+      <file leaf-file-name="dom-agent-new.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-agent-new.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+            <state line="61" column="47" selection-start="2335" selection-end="2349" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/default.css">
+      <file leaf-file-name="matrix.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="21" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+            <state line="120" column="29" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keymapper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/keymapper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="33" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stroke-handler.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/stroke-handler.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="8" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sprite-manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/sprite-manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="30" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cav_of_sillahc_x2_anim.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/cav_of_sillahc_x2_anim.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -177,22 +204,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/stroke-rules/stroke-rule.js" />
-        <option value="$PROJECT_DIR$/app/models/DocumentService.java" />
-        <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/public/javascripts/stroke.js" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/public/javascripts/stroke-rules/ctrld-rule.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/stroke-handler.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/drawing/dom-cursor.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/recorder.js" />
         <option value="$PROJECT_DIR$/public/javascripts/writer.js" />
-        <option value="$PROJECT_DIR$/app/views/build/scripts.files" />
-        <option value="$PROJECT_DIR$/public/stylesheets/default.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/stroke-rules/alphanumeric-rule.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/stroke-rules/unmodified-rule.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/position.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/stroke-rules/special-key-rule.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/stroke-rules/ctrld-rule.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/sprite-manager.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/stroke-handler.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/keymapper.js" />
         <option value="$PROJECT_DIR$/public/javascripts/drawing/animation.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/drawing/dom-matrix.js" />
-        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
-        <option value="$PROJECT_DIR$/public/javascripts/drawing/dom-cell.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/drawing/drawing-agent.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/drawing/matrix.js" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/drawing/dom-agent-new.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/dom-styles.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/drawing/dom-cell-new.js" />
       </list>
     </option>
   </component>
@@ -228,8 +255,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -352,6 +377,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almost-writer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almost-writer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -456,21 +499,23 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.11668611" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="project.structure.side.proportion" value="0.11668611" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
@@ -619,28 +664,49 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="803" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1920" height="1103" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20729928" sideWeight="0.99877673" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23652048" sideWeight="0.23503649" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23652048" sideWeight="0.670073" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13522181" sideWeight="0.8160584" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1839416" sideWeight="0.99877673" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -670,7 +736,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Music added, reset color to white on playback, faster animation, corrected behaviour on deletion of animated character." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -683,6 +749,7 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Music added, reset color to white on playback, faster animation, corrected behaviour on deletion of animated character." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -692,114 +759,92 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/stroke-rules/ctrld-rule.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/writer-cell.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/sprite-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/stroke-handler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="36" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-cursor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/build/scripts.files">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="497" selection-end="497" vertical-scroll-proportion="0.53685504">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="26" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+        <state line="27" column="38" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/stroke-rules/special-key-rule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="89" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/stroke-rules/ctrld-rule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="65" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/build/scripts.files">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="36" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/recorder.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="368" selection-end="381" vertical-scroll-proportion="0.0">
+        <state line="7" column="13" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/writer.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/keymapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="30" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="66" column="33" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/stroke-handler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="9" selection-start="734" selection-end="734" vertical-scroll-proportion="-22.04">
-          <folding />
-        </state>
+        <state line="40" column="8" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-cell.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/sprite-manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="34" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="38" column="30" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-matrix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="20" selection-start="2485" selection-end="2489" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/drawing-agent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/public/images/cav_of_sillahc_x2_anim.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-agent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="23" selection-start="1396" selection-end="1396" vertical-scroll-proportion="1.5756098">
+        <state line="34" column="23" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-agent-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="47" selection-start="2335" selection-end="2349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/matrix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="29" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/dom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="40" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/drawing/dom-cell-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="52" selection-start="815" selection-end="815" vertical-scroll-proportion="0.25768822">
           <folding />
         </state>
       </provider>

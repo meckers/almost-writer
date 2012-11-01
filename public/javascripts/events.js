@@ -8,7 +8,6 @@ Events = {
     },
 
     trigger: function(name, data) {
-        //console.log("EVENTS - triggering", name, "with", data);
         $(this.listeners).each(function(i,e) {
             if (e.name === name) {
                 e.callback.apply(e.context, [data]);

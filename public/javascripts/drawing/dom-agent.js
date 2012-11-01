@@ -1,4 +1,4 @@
-DomAgent = DrawingAgent.extend({
+DomAgentOld = DrawingAgent.extend({
 
     element: null,
     matrix: null,

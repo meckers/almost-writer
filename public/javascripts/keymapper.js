@@ -53,6 +53,7 @@ var KeyMapper = {
 
     },
     ctrld: {
+        'insert' : 8,
         'color-lightbrown' : 49,
         'color-darkbrown' : 50,
         'color-pink' : 51,
@@ -60,6 +61,9 @@ var KeyMapper = {
         'color-mediumgrey' : 53,
         'color-lightgreen' : 54,
         'color-lightblue' : 55,
-        'color-lightgrey' : 56
+        'color-lightgrey' : 56,
+        'animated-equals' : 48,
+        'animated-dash': 189,
+        'animated-asterisk' : 222
     }
 }

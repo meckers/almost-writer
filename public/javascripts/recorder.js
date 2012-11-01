@@ -14,7 +14,7 @@ Recorder = Class.extend({
     recordStroke: function(stroke) {
         var me = this;
         this.strokes.push(stroke);
-        console.log(this.strokes);
+        //console.log(this.strokes);
     },
 
     startPlayback: function() {

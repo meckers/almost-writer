@@ -1,7 +1,5 @@
-Listening for transport dt_socket at address: 8000
-23:53:03,349 INFO  ~ Starting /Users/Magnus/Documents/play-projects/almost-writer
-23:53:04,025 WARN  ~ You're running Play! in DEV mode
-23:53:04,153 INFO  ~ Listening for HTTP on port 9099 (Waiting a first request to start) ...
-23:53:12,448 INFO  ~ Application 'almost-writer' is now started !
-instantiating DB
-instantiating DB
+Listening for transport dt_socket at address: 56364
+07:22:42,506 INFO  ~ Starting /Users/Magnus/Documents/play-projects/almost-writer
+07:22:43,203 WARN  ~ You're running Play! in DEV mode
+07:22:43,307 INFO  ~ Listening for HTTP on port 9099 (Waiting a first request to start) ...
+07:22:51,846 INFO  ~ Application 'almost-writer' is now started !

@@ -20,7 +20,7 @@ Animation = Class.extend({
 
     doAnimation: function() {
         this.animating = true;
-        this.horizontalPosition = 16;
+        this.horizontalPosition = 0;
 
         var me = this;
         this.interval = window.setInterval(function() {
@@ -28,7 +28,7 @@ Animation = Class.extend({
             me.horizontalPosition -= 1;
             me.update();
 
-            if(me.horizontalPosition === 0) {
+            if(me.horizontalPosition === -16) {
                 window.clearInterval(me.interval);
                 me.doAnimation();
             }
@@ -36,7 +36,10 @@ Animation = Class.extend({
     },
 
     update: function() {
-        $(".animated").find("div.original").css('left', -16 + this.horizontalPosition);
-        $(".animated").find("div.copy").css('left', this.horizontalPosition);
+        var me = this;
+        $('.animated').each(function(i,e) {
+            var x = parseInt($(e).attr('orig-x')) + me.horizontalPosition;
+            $(e).css('background-position-x', x);
+        });
     }
 });

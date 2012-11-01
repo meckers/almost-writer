@@ -25,7 +25,7 @@ AlphaNumericRule = StrokeRule.extend({
                 }
             }
         }
-        console.log("rule", this.name, "NOT MATCHED for keyCode", stroke.keyCode, "and returning null");
+        //console.log("rule", this.name, "NOT MATCHED for keyCode", stroke.keyCode, "and returning null");
         return null;
     }
 });

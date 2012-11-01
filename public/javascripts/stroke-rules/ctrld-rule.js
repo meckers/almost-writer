@@ -4,13 +4,14 @@ CtrldRule = StrokeRule.extend({
     shifted: false,
     alted: false,
     ctrld: true,
-    eventType: 'keypress',
+    eventType: 'keydown', // was keypress, testing if keydown is OK because of insert special key.
 
 
     checkAndResolve: function(stroke) {
         if (stroke.eventType == this.eventType && stroke.ctrld) {
             for (var p in KeyMapper.ctrld) {
                 if (KeyMapper.ctrld[p] !== undefined && stroke.keyCode === KeyMapper.ctrld[p]) {
+                    console.log("triggering SPECIAL_KEY_" + p.toUpperCase());
                     Events.trigger("SPECIAL_KEY_" + p.toUpperCase());
                     //return false;
                 }

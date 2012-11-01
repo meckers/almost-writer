@@ -20,7 +20,8 @@ SpriteMap = {
     '5': [1,21], '6': [1,22], '7': [1,23],
     '8': [1,24], '9': [1,25], ':': [1,26],
     ';': [1,27], '<': [1,28], '=': [1,29],
-    '>': [1,30], '?': [1,31]
+    '>': [1,30], '?': [1,31], '≈': [7,0],        // ≈ = alt+x
+    '~': [7,2], '™': [7,4]                       // ™ = alt+'
 
 };
 
@@ -33,6 +34,17 @@ SpriteManager = Class.extend({
 
     init: function() {
 
+    },
+
+    getBlank: function() {
+        return this.getForChar(' ');
+    },
+
+    getForPosition: function(top, left) {
+        return {
+            top: top * this.charSize.height,
+            left: left * this.charSize.width
+        };
     },
 
     getForChar: function(char) {

@@ -1,4 +1,4 @@
-DomCell = Class.extend({
+DomCellOld = Class.extend({
 
     element: null,
     row: null,

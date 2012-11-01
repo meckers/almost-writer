@@ -25,18 +25,20 @@ StrokeHandler = Class.extend({
 
         $(document).keypress(function(e) {
             //console.log("code", e.keyCode);
-            console.group("KEYPRESS");
+            //console.group("KEYPRESS");
+            //e.stopPropagation();
             return me.dispatchStroke(e);
         });
         $(document).keydown(function(e) {
-            console.group("KEYDOWN");
+            //console.group("KEYDOWN");
+            //e.stopPropagation();
             return me.dispatchStroke(e);
         });
     },
 
 
     dispatchStroke: function(keyEvent) {
-        //console.log(keyEvent.type, "stroke", keyEvent.keyCode, keyEvent);
+        console.log(keyEvent.type, "stroke", keyEvent.keyCode, keyEvent);
         var stroke = new Stroke({
             keyCode: keyEvent.keyCode,
             shifted: keyEvent.shiftKey,

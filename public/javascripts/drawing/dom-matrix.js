@@ -1,4 +1,4 @@
-DomMatrix = Class.extend({
+DomMatrixOld = Class.extend({
 
     element: null,
     currentColor: 'white',

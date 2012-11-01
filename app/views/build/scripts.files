@@ -6,10 +6,10 @@ static-letters.js
 drawing/drawing-agent.js
 drawing/canvas-agent.js
 drawing/canvas-matrix.js
-drawing/dom-agent.js
-drawing/dom-matrix.js
-drawing/dom-cell.js
+drawing/dom-agent-new.js
+drawing/dom-cell-new.js
 drawing/dom-cursor.js
+drawing/matrix.js
 drawing/animation.js
 stroke-rules/stroke-rule.js
 stroke-rules/alphanumeric-rule.js

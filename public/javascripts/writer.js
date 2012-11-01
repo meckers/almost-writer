@@ -42,7 +42,7 @@ Writer = Class.extend({
             url: '/save',
             data: { strokes: strokeString }
         }).done(function(message) {
-            console.log("done", message);
+            //console.log("done", message);
             document.location = "/load/" + message;
         });
     },

@@ -9,8 +9,8 @@ SpecialKeyRule = StrokeRule.extend({
         var result = null;
         for (var p in KeyMapper.special) {
             //console.log(p);
-            if (stroke.keyCode === KeyMapper.special[p]) {
-                console.log("triggering", p);
+            if (stroke.keyCode === KeyMapper.special[p] && !stroke.ctrld) {  // todo: try !isModified.
+                //console.log("triggering", p);
                 Events.trigger("SPECIAL_KEY_" + p.toUpperCase(), stroke);
                 //return false;
             }
