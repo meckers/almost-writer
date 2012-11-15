@@ -3,18 +3,50 @@ Writer = Class.extend({
 
     recorder: null,
     drawingAgent: null,
+    modeAgent: null,
 
     init: function() {
-
+        console.log("init writer");
         this.drawingAgent = new DomAgent("#char-matrix");
-        this.strokeHandler = new StrokeHandler();
+        this.modeAgent = new ModeAgent();
+        //this.strokeHandler = new StrokeHandler();
         this.recorder = new Recorder();
         this.animation = new Animation();
+        this.scroller = new Scrolling("#scroller");
+        this.setUpModes();
+    },
 
+    // Allokerar stroke handlers för alla modes, kanske inte bra.
+    setUpModes: function() {
+        this.modes = {
+            RECORD_MODE: new RecordMode(),
+            MENU_MODE: new MenuMode()
+        }
+    },
+
+    // Called from default.js
+    start: function() {
+        this.startScroller();
         if (typeof(_strokes) !== 'undefined') {
             this.playbackSaved();
         }
+        else {
+            this.modeAgent.setMode(this.modes.RECORD_MODE);
+        }
         this.listen();
+    },
+
+    clearDisplay: function() {
+        this.drawingAgent.reset();
+    },
+
+    getRecorder: function() {
+        return this.recorder;
+    },
+
+    startScroller: function() {
+        this.scroller.setText("HEJ, DETTA AR EN SCROLLTEXT FOR ATT TESTA HUR DET FUNKAR MED SCROLLTEXTER PA ETT UNGEFAR");
+        this.scroller.start();
     },
 
     playbackSaved: function() {

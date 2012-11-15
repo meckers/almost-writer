@@ -1,5 +1,6 @@
-var writer = null;
+var _writer = null;
 
 $(function() {
-    writer = new Writer($("#writer-canvas"));
+    _writer = new Writer($("#writer-canvas"));
+    _writer.start();
 })

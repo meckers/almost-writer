@@ -38,7 +38,7 @@ StrokeHandler = Class.extend({
 
 
     dispatchStroke: function(keyEvent) {
-        console.log(keyEvent.type, "stroke", keyEvent.keyCode, keyEvent);
+        //console.log(keyEvent.type, "stroke", keyEvent.keyCode, keyEvent);
         var stroke = new Stroke({
             keyCode: keyEvent.keyCode,
             shifted: keyEvent.shiftKey,

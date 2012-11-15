@@ -3,5 +3,10 @@ ModeAgent = Class.extend({
 
     init: function() {
 
+    },
+
+    setMode: function(mode) {
+        this.mode = mode;
+        this.mode.activate();
     }
 });

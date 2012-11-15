@@ -1,0 +1,3 @@
+Mode = Class.extend({
+
+});

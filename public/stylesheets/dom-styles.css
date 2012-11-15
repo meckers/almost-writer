@@ -10,6 +10,20 @@ div.char-cell {
     float:left;
 }
 
+#scroller {
+    position: relative;
+    background-color:black;
+    border: 1px solid red;
+    width: 640px;
+    height: 160px;
+    overflow: hidden;
+}
+
+#scroller .text {
+    color: white;
+    font-size: 100px;
+}
+
 .font-cav-of-sillahc {
     background-image: url(/public/images/cav_of_sillahc_x2_anim.png);
 }

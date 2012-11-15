@@ -25,6 +25,23 @@ SpriteMap = {
 
 };
 
+
+SpriteAgent = {
+
+    charSize: {
+        width: 16,
+        height: 16
+    },
+
+    getPositionForChar: function(chr) {
+        var charIndex = SpriteMap[chr];
+        return {
+            top: charIndex[0] * this.charSize.height,
+            left: charIndex[1] * this.charSize.width
+        };
+    }
+}
+
 SpriteManager = Class.extend({
 
     charSize: {

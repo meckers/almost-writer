@@ -63,9 +63,11 @@ DomAgent = DrawingAgent.extend({
         })
     },
 
+    // TODO: ta bort denna och använd write() direkt i stället, när jag orkar byta ut alla ställen där en anropas.
     writeChar: function(chr, animate) {
-        var mapping = SpriteMap[chr];
-        this.write(mapping, animate);
+        //var mapping = SpriteMap[chr];
+        //this.write(mapping, animate);
+        this.write(chr, animate);
     },
 
     moveLeft: function() {
@@ -85,9 +87,9 @@ DomAgent = DrawingAgent.extend({
     },
 
 
-    write: function(spriteMapping, animate) {
+    write: function(chr, animate) {
         var currentCell = this.matrix.getCurrentUnit();
-        currentCell.applyMapping(spriteMapping, animate);
+        currentCell.applyChar(chr, animate);
         currentCell.setColor(this.color);
         this.moveRight();
     },
@@ -174,119 +176,12 @@ DomAgent = DrawingAgent.extend({
 
     getCurrentCell: function() {
         return this.matrix.getCurrentUnit();
+    },
+
+    dumpText: function() {
+        this.matrix.forEach(function(r, c, cell) {
+
+        })
     }
 
 });
-
-
-/*
-DomMatrix = Class.extend({
-
-    matrix: null,
-    element: null,
-    cursor: null,
-    color: null,
-
-    init: function(element) {
-        this.element = element;
-
-        this.setUp();
-    },
-
-    setUp: function() {
-        this.addCells();
-        this.listen();
-        this.updatePosition();
-    },
-
-    listen: function() {
-        Events.register("MATRIX_POSITION_UPDATED", this, this.updatePosition);
-    },
-
-
-
-
-    moveLeft: function() {
-        this.matrix.moveLeft();
-    },
-
-    moveUp: function() {
-        this.matrix.moveUp();
-    },
-
-    moveRight: function() {
-        this.matrix.moveRight();
-    },
-
-    moveDown: function() {
-        this.matrix.moveDown();
-    }
-
-});
-  */
-
-
-
-/*
-DomMatrix_holdthatthought = Class.extend({
-
-    dimensions: {
-        rowWidth: 40,
-        colHeight: 40
-    },
-
-    currentPosition: null,
-    element: null,
-    rows: [],
-
-    init: function(element) {
-        this.element = element;
-        this.currentPosition = new Position(0,0);
-        this.setUp();
-    },
-
-    setUp: function() {
-        this.createCells();
-        this.addCells();
-    },
-
-    createCells: function() {
-        for (r=0; r<this.dimensions.colHeight; r++) {
-            var row = { cols: [] };
-            for (c=0; c<this.dimensions.rowWidth; c++) {
-                var cell = new DomCell();
-                row.cols.push(cell);
-            }
-            this.rows.push(row);
-        }
-    },
-
-    addCells: function() {
-        for (r=0; r < this.rows.length; r++) {
-            for (c=0; c < this.rows[r].cols.length; c++) {
-                $(this.element).append(this.rows[r].cols[c].getElement());
-            }
-        }
-    },
-
-    getCurrentCell: function() {
-        return this.getCellAtPosition(this.currentPosition);
-    },
-
-    getCellAtPosition: function(position) {
-        var row = position.row;
-        var col = position.col;
-        return this.rows[row].cols[col];
-    },
-
-    moveToRightCell: function() {
-        if (this.currentPosition.col !== 39) {
-            this.currentPosition.col++;
-        }
-        else {
-            this.currentPosition.row++;
-            this.currentPosition.col = 0;
-        }
-    }
-
-}); */

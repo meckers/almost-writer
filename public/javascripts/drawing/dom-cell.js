@@ -20,6 +20,22 @@ DomCell = Class.extend({
         return this.element;
     },
 
+    applyChar: function(chr, animate) {
+
+        var pos = SpriteAgent.getPositionForChar(chr);
+
+        this.element.css({
+            'background-position': '-' + pos.left + 'px ' + '-' + pos.top + 'px'
+        });
+
+        if (animate) {
+            this.animate(true);
+        }
+        else {
+            this.deAnimate();
+        }
+    },
+
     applyMapping: function(mapping, animate) {
 
         var spritePosTop = mapping[0] * 16;
@@ -92,6 +108,12 @@ DomCell = Class.extend({
         $(this.element).removeClass (function (index, css) {
             return (css.match (/\bcolor-\S+/g) || []).join(' ');
         });
+    },
+
+    isBlank: function() {
+        var bgCss = $(this.element).css('background-position');
+        var pos = SpriteAgent.getPositionForChar(' ');
+        return (bgCss = ('-' + pos.left + 'px ' + '-' + pos.top + 'px'))
     }
 
 
