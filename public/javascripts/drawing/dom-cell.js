@@ -1,120 +1,98 @@
-DomCellOld = Class.extend({
+DomCell = Class.extend({
 
     element: null,
-    row: null,
-    col: null,
-    charElement: null,
-    spriteManager: null,
-    chr: '',
-    color: 'white',
-    charContainer: null,
-    secondCharElement: null,
-    animated: false,
+    isAnimated: false,
 
-    init: function(width, height, row, col) {
-        this.spriteManager = new SpriteManager();
-        this.row = row;
-        this.col = col;
-        this.element = $("<div></div>");
-        this.element.addClass("char-sprite");
-        this.element.css({
-            'width' : width,
-            'height' : height,
-            'left' : col * height + 'px',
-            'top' : row * width + 'px'
-        });
-        this.relativizer = $("<div></div>");
-        this.relativizer.attr('name', 'relativizer');
-        this.relativizer.css({
-            'position': 'relative'
-        });
-        this.charContainer = $("<div></div>");
-        this.charContainer.addClass("char-container");
-        this.relativizer.append(this.charContainer);
-        this.element.append(this.relativizer);
-        //this.setCharElement();
-        //this.element.append(this.charElement);
-        this.setFont();
-        this.setColor(this.color);
-        this.setToSpace();
+    init: function() {
+        this.element = this.createElement();
+        this.setDefaultMapping();
     },
 
-    /*
-    setCharElement: function(chr) {
-        this.charElement = $("<div></div>");
-        this.charElement.css({
-            'position': 'absolute'
+    createElement: function() {
+        var e = $("<div></div>");
+        e.addClass("char-cell");
+        //e.css('background-position', '-0px -16px');
+        e.addClass("font-cav-of-sillahc");
+        return e;
+    },
+
+    getElement: function() {
+        return this.element;
+    },
+
+    applyMapping: function(mapping, animate) {
+
+        var spritePosTop = mapping[0] * 16;
+        var spritePosLeft = mapping[1] * 16;
+
+        this.element.css({
+            'background-position': '-' + spritePosLeft + 'px ' + '-' + spritePosTop + 'px'
         });
-        if (chr !== undefined) {
-            this.charElement.html(chr);
+
+        if (animate) {
+            this.animate(true);
         }
-    },*/
-
-    setColor: function(color) {
-
-        this.color = color;
-
-        $(this.charContainer).removeClass (function (index, css) {
-            return (css.match (/\bcolor-\S+/g) || []).join(' ');
-        });
-
-        $(this.charContainer).addClass("color-" + color);
-
-        /*
-        this.element.css({
-            'background-color': 'white'
-        });*/
+        else {
+            this.deAnimate();
+        }
     },
 
-    setFont: function(font) {
-        this.charContainer.addClass("cav-of-sillahc");
+    setDefaultMapping: function() {
+        this.element.css('background-position', '-0px -16px');
     },
 
-    setToSpace: function() {
-        this.write(' ');
-    },
-
-    write: function(chr) {
-        this.deAnimate();
-        var charWidth = this.spriteManager.charSize.width;
-        var charHeight = this.spriteManager.charSize.height;
-        var spritePos = SpriteMap[chr];
-        this.chr = chr;
-        this.setColor(this.color);
-
-        this.charContainer.css({
-            'background-position': '-' + (charWidth * spritePos[1]) + 'px ' + '-' + (charHeight * spritePos[0]) + 'px'
-        });
-        //this.charElement.html(chr);
-    },
-
-    getChar: function() {
-        //return this.charElement.html();
-        return this.chr;
-    },
-
-    copy: function(fromCell) {
-        this.write(fromCell.getChar());
-    },
-
-    animate: function() {
-        this.secondCharElement = this.charContainer.clone();
-        this.charContainer.addClass("original");
-        this.secondCharElement.addClass("copy");
-        this.relativizer.append(this.secondCharElement);
-        this.relativizer.addClass("animated");
+    animate: function(forceSetOrigX) {
+        this.isAnimated = true;
+        this.element.addClass("animated");
+        if (this.element.attr('orig-x') === undefined || forceSetOrigX) {
+            this.element.attr('orig-x', this.element.css('background-position-x').replace('px','')); //keep track of original background offset
+        }
         Events.trigger("ANIMATED_CHARACTER_ENTERED");
     },
 
     deAnimate: function() {
-        if (this.relativizer.hasClass("animated")) {
-            console.log("de-animating");
-            this.relativizer.find(".original").css('left', 0).removeClass("original");
-            this.relativizer.find(".copy").remove();
-            this.relativizer.removeClass("animated");
-        }
-    }
+        this.element.removeClass("animated");
+        this.isAnimated = false;
+    },
 
+    duplicateCell_old: function(sourceCell) {
+        var bgPos = sourceCell.getElement().css('background-position');
+        var classes = sourceCell.getElement().className;
+        this.element.css('background-position', bgPos);
+        this.element.className = classes;
+        if (sourceCell.isAnimated) {
+            this.element.attr('orig-x', sourceCell.element.attr('orig-x'));  // TODO: måste ta ett större grepp om detta. orig-x ersätts inte om man försöker skriva ett nytt animerat tecken i en ruta som har ett annat animerat tecken sedan förut.
+            this.animate();
+        }
+    },
+
+    duplicateCell: function(sourceCell) {
+        var sourceElem = sourceCell.getElement();
+        var attributes = sourceElem.prop("attributes");
+        var me = this;
+
+        $.each(attributes, function() {
+            me.element.attr(this.name, this.value);
+        });
+
+        if (sourceCell.isAnimated) {
+            this.animate();
+        }
+    },
+
+
+
+
+    setColor: function(color) {
+        this.removeColor();
+        $(this.element).addClass("color-" + color);
+    },
+
+    removeColor: function() {
+        $(this.element).removeClass (function (index, css) {
+            return (css.match (/\bcolor-\S+/g) || []).join(' ');
+        });
+    }
 
 
 });
